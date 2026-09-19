@@ -20,11 +20,19 @@
 | --- | --- |
 | [citlyze-mcp](https://github.com/citlyze/citlyze-mcp) | MCP server access to your Citlyze workspace: hosted endpoint, Gemini CLI extension, and Claude Desktop extension |
 | [citlyze-skills](https://github.com/citlyze/citlyze-skills) | Agent skills (open SKILL.md standard) for AI visibility reports, citation gap analysis, prompt audits, action plans, and a standalone AEO page audit |
+| [ai-readable](https://github.com/citlyze/ai-readable) | CLI, GitHub Action and Agent Skill that show what each AI crawler actually gets from your pages and fail CI when a deploy makes a page unreadable to AI search |
+
+Check a page from the terminal, no account needed:
+
+```bash
+npx ai-readable example.com/pricing --render
+```
 
 Quick start with any SKILL.md-compatible agent (Claude Code, Codex, Cursor, Gemini CLI, and more):
 
 ```bash
 npx skills add Citlyze/citlyze-skills
+npx skills add Citlyze/ai-readable
 ```
 
 Or connect the read-only MCP server directly:
